@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yuki Furniture • Home</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: #111;
+    }
+
+    /* NAVBAR */
+    nav {
+      width: 100%;
+      padding: 18px 40px;
+      background: #0058A3;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    nav .logo {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #FFDA1A;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #FFDA1A;
+    }
+
+    /* HERO BARU LAYOUT MID-UPPER */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 100px 20px 40px;
+      background: #F6F6F6;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      color: #0058A3;
+      margin-bottom: 14px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: auto;
+      margin-bottom: 26px;
+    }
+
+    .hero img {
+      width: 85%;
+      max-width: 680px;
+      margin: 40px auto 0;
+      display: block;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    }
+
+    /* GRID PRODUK ALA IKEA */
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 600;
+      margin-top: 60px;
+      color: #0058A3;
+    }
+
+    .product-grid {
+      margin: 40px auto 80px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .card {
+      background: white;
+      padding: 18px;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 14px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    footer {
+      background: #0058A3;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      margin-top: 60px;
+    }
+  .modern-nav {
+  width: 100%;
+  padding: 18px 40px;
+  background: #0058a3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+.nav-left {
+  font-size: 24px;
+  color: #ffdb00;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.nav-links a {
+  margin-left: 28px;
+  font-size: 17px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: .3s;
+}
+.nav-links a:hover {
+  color: #ffdb00;
+  text-shadow: 0 0 8px #ffdb00;
+}
+body { padding-top: 90px; }
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 17px;
+  font-weight: 500;
+  margin-left: 28px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.dropbtn:hover {
+  color: #ffdb00;
+  text-shadow: 0 0 8px #ffdb00;
+}
+
+/* ISI DROPDOWN */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #0058A3;
+  min-width: 160px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  padding: 10px 0;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.dropdown-content a:hover {
+  background: #004d8f;
+  color: #ffdb00;
+}
+
+/* TAMPILKAN DROPDOWN SAAT HOVER */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* === CSS RESPONSIVE === */
+
+/* BIAR NAVBAR RAPI DI HP */
+@media (max-width: 768px) {
+  .modern-nav {
+    padding: 16px 20px;
+  }
+
+  .nav-left {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-links a,
+  .dropbtn {
+    font-size: 15px;
+    margin-left: 14px;
+  }
+
+  /* Dropdown agar tidak melebar terlalu jauh */
+  .dropdown-content {
+    min-width: 130px;
+  }
+}
+
+/* HP < 500px, NAVBAR MENJADI STACKED */
+@media (max-width: 500px) {
+  .modern-nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px 18px;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links a,
+  .dropbtn {
+    margin: 8px;
+    font-size: 15px;
+  }
+
+  body {
+    padding-top: 120px !important;
+  }
+}
+
+/* HERO RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  .hero img {
+    width: 95%;
+  }
+}
+
+/* GRID PRODUK RESPONSIVE */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
+  }
+
+  .card {
+    padding: 14px;
+  }
+
+  .card h3 {
+    font-size: 17px;
+  }
+  .card p {
+    font-size: 14px;
+  }
+}
+
+/* HP > 480px sangat kecil */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 26px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    width: 92%;
+  }
+
+  .card img {
+    border-radius: 8px;
+  }
+}
+
+
+</style>
+</head>
+
+<body>
+    <!-- NAV -->
+<nav class="modern-nav">
+  <div class="nav-left">Yuki Furniture</div>
+
+  <div class="nav-links">
+    <a href="index.html">Beranda</a>
+
+    <!-- DROPDOWN BARANG -->
+    <div class="dropdown">
+      <button class="dropbtn">Barang ▾</button>
+      <div class="dropdown-content">
+        <a href="kursi.html">Kursi</a>
+        <a href="meja.html">Meja</a>
+        <a href="lemari.html">Lemari</a>
+      </div>
+    </div>
+    <a href="Founder.html">Founder</a>
+  </div>
+</nav>
+
+
+  <!-- HERO BARU -->
+  <section class="hero">
+    <h1>Temukan Furnitur Minimalis Bergaya Modern</h1>
+    <p>Desain ala IKEA dengan kualitas premium yang cocok untuk rumah, kantor, maupun ruang santai Anda.</p>
+    <img src="1.jpg" alt="living room">
+  </section>
+
+  <footer>
+    © 2025 Yuki saintek 12a chatgpt
+  </footer>
+</body>
+</html>

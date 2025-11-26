@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kursi • Yuki Furniture</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: #111;
+      padding-top: 90px;
+    }
+
+    /* NAVBAR (SAMA PERSIS DENGAN HALAMAN UTAMA) */
+    .modern-nav {
+      width: 100%;
+      padding: 18px 40px;
+      background: #0058a3;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+    .nav-left {
+      font-size: 24px;
+      color: #ffdb00;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .nav-links a {
+      margin-left: 28px;
+      font-size: 17px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: .3s;
+    }
+    .nav-links a:hover {
+      color: #ffdb00;
+      text-shadow: 0 0 8px #ffdb00;
+    }
+
+    /* DROPDOWN SAMA */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropbtn {
+      background: none;
+      color: white;
+      border: none;
+      font-size: 17px;
+      font-weight: 500;
+      margin-left: 28px;
+      cursor: pointer;
+      transition: .3s;
+    }
+    .dropbtn:hover {
+      color: #ffdb00;
+      text-shadow: 0 0 8px #ffdb00;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: #0058A3;
+      min-width: 160px;
+      border-radius: 8px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+      padding: 10px 0;
+    }
+    .dropdown-content a {
+      color: white;
+      padding: 10px 20px;
+      display: block;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    .dropdown-content a:hover {
+      background: #004d8f;
+      color: #ffdb00;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* GRID PRODUK */
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 600;
+      margin-top: 40px;
+      color: #0058A3;
+    }
+
+    .product-grid {
+      margin: 40px auto 80px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .card {
+      background: white;
+      padding: 18px;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 14px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    footer {
+      background: #0058A3;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="modern-nav">
+  <div class="nav-left">Yuki Furniture</div>
+  <div class="nav-links">
+    <a href="index.html">Beranda</a>
+
+    <div class="dropdown">
+      <button class="dropbtn">Barang ▾</button>
+      <div class="dropdown-content">
+        <a href="kursi.html">Kursi</a>
+        <a href="meja.html">Meja</a>
+        <a href="lemari.html">Lemari</a>
+      </div>
+    </div>
+    <a href="Founder.html">Founder</a>
+  </div>
+</nav>
+<h1 class="section-title">Koleksi Lemari</h1>
+<div class="product-grid">
+
+  <div class="card">
+    <img src="18.jpg" alt="Lemari Minimalis Putih">
+    <h3>Lemari Minimalis Putih</h3>
+    <p>Desain simpel dengan 2 pintu, cocok untuk ruang modern.</p>
+  </div>
+
+  <div class="card">
+    <img src="19.jpeg" alt="Lemari Kayu Jati">
+    <h3>Lemari Kayu Jati</h3>
+    <p>Lemari premium berbahan kayu jati solid yang tahan lama.</p>
+  </div>
+
+  <div class="card">
+    <img src="20.jpeg" alt="Lemari Sliding">
+    <h3>Lemari Sliding</h3>
+    <p>Pintu geser yang hemat ruang, cocok untuk kamar minimalis.</p>
+  </div>
+
+  <div class="card">
+    <img src="21.jpg" alt="Lemari Serbaguna">
+    <h3>Lemari Serbaguna</h3>
+    <p>Dilengkapi rak fleksibel yang dapat diatur sesuai kebutuhan.</p>
+  </div>
+
+  <div class="card">
+    <img src="22.jpg" alt="Lemari Kaca Modern">
+    <h3>Lemari Kaca Modern</h3>
+    <p>Sentuhan kaca tebal memberikan kesan mewah & elegan.</p>
+  </div>
+
+  <div class="card">
+    <img src="23.jpeg" alt="Lemari Anak Karakter">
+    <h3>Lemari Anak Karakter</h3>
+    <p>Motif lucu & warna ceria, ideal untuk kamar anak.</p>
+  </div>
+
+  <div class="card">
+    <img src="24.jpg" alt="Lemari Tinggi 3 Pintu">
+    <h3>Lemari Tinggi 3 Pintu</h3>
+    <p>Kapasitas besar, cocok untuk penyimpanan pakaian & perlengkapan.</p>
+  </div>
+
+  <div class="card">
+    <img src="25.jpg" alt="Lemari Industrial">
+    <h3>Lemari Industrial</h3>
+    <p>Model industrial dengan kombinasi besi & kayu, sangat kekinian.</p>
+  </div>
+
+</div>
+<footer>
+  © 2025 Yuki saintek 12a chatgpt
+</footer>
+</body>
+</html>
